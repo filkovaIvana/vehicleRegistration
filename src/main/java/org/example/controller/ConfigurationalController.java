@@ -66,7 +66,6 @@ public class ConfigurationalController {
             vehicleService.registerVehicle(model, user);
         } catch (RegisterCodeAlreadyExistException e) {
             return new VehicleRegistrationResponseModel(false, "Provided registration code already exists.");
-            // return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
 
         return new VehicleRegistrationResponseModel(true, "Vehicle registration is successfully added.");

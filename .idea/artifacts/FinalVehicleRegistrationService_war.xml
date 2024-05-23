@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="FinalVehicleRegistrationService:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/FinalVehicleRegistrationService_war</output-path>
+    <root id="archive" name="FinalVehicleRegistrationService_war.war">
+      <element id="artifact" artifact-name="FinalVehicleRegistrationService:war exploded" />
+    </root>
+  </artifact>
+</component>
