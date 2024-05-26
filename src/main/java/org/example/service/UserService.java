@@ -66,7 +66,7 @@ public class UserService {
         System.out.println(generatedString);
 
         user.setPassword(passwordEncoder.encode(generatedString));
-        user.setPhoneNumber(model.getPhoneNumber());
+//        user.setPhoneNumber(model.getPhoneNumber());
         UserRole userRole = new UserRole("ROLE_ADMIN");
         userRole.setDescription("This is admin role");
         UserRight userRight1 = new UserRight("LIST");

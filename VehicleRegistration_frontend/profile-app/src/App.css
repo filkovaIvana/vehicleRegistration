@@ -1,0 +1,283 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.main-box {
+  background-color: #135E70;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.container, .container-fluid {
+  margin-top: 20px;
+  background-color: #3c4953;
+}
+
+.edit-attr-group {
+display: flex;
+}
+
+.edit-attr-label {
+
+  margin-right: 10px;
+  color:white;
+  font-weight: 100;
+  width: 20%
+}
+
+.upload-attr-label {
+
+ margin-right: 10px;
+  color:white;
+  font-weight: 100;
+  
+  text-align: center;
+
+}
+
+.edit-attr-input {
+   width: 70%;
+
+}
+
+.white-text {
+color: lightcoral;
+
+}
+
+.white-title {
+color: white;
+ font-weight: 400;
+ text-align: center;
+ 
+}
+
+.white-load {
+color: white;
+ 
+}
+
+.trackerLeft {
+    text-align: center;
+
+}
+
+.pub-row {
+
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+   padding-top: 5px;
+}
+
+.pub-column {
+
+  width: 80%;
+}
+
+.delete-pub {
+
+  margin-left: 30px;
+}
+
+.bp3-button .bp3-icon-standard {
+
+    padding-left: 0px;
+}
+
+.bp3-button.bp3-minimal {
+
+  width: 100%;
+}
+
+.bp3-file-upload-input {
+
+  background-color: #516371;
+}
+
+.bp3-button > :last-child {
+    margin-right: 0;
+    margin-left: -85px;
+}
+
+.modal-title {
+
+  color: #e7e7e7;
+}
+
+.ReactVirtualized__Grid__innerScrollContainer {
+
+  width: 100% !important;
+  max-width: 100% !important;;
+}
+
+.centar-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 100;
+
+}
+
+.h2-title {
+    font-weight: 100;
+    text-align: center;
+
+}
+
+.navbar-style {
+  background-color: "#135E70";
+  display: none;
+  border-bottom: 18px solid #61daff;
+}
+
+.app-margin{
+  margin-left:20px;
+  margin-right:20px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .app-margin{
+    margin-left:60px;
+    margin-right:60px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+ .navbar-style {
+    display: flex;
+    width: 100%;
+    margin: 0 0 0 0; 
+ }
+  
+}
+
+.navbar-elem {
+ color: #61daff;
+ margin-right: 45px;
+ font-size: 1.4rem;
+}
+
+.navbar-elem-with-sub {
+ color: #61daff;
+ margin-right: 35px;
+ font-size: 1.4rem;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+
+@font-face {
+    font-family: 'sofia-pro';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local('sofia-pro'),
+      url('/assets/fonts/sofia-pro.ttf') format('truetype'),
+      url('/assets/fonts/Mostardesign\ -\ Sofia\ Pro\ Medium_0.otf') format('otf')
+}
+
+@media only screen and (min-width: 768px) {
+  .app-margin{
+    margin-left:40px;
+    margin-right:40px;
+  }
+}
+
+.grant-row {
+
+  margin-bottom: 15px;
+}
+
+.grant-column {
+
+  padding-right: 15px;
+  
+}
+
+.rowClass {
+
+ margin-left: 0px 
+
+}
+
+
+.labelClass {
+
+     margin-left: -15px;
+
+}
+
+
+/* .App {
+  font-family: sans-serif;
+} */
+
+
+
+/* / */
+
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.list {
+  padding: 10px;
+}
+
+.row { 
+  border-bottom: 1px solid #ebeced;
+  text-align: left;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  margin-right: 10px;
+}
+
+.content {
+  padding: 10px;
+} */

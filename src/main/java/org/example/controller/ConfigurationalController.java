@@ -46,6 +46,7 @@ public class ConfigurationalController {
             createAccountResponseModel.setDescription("Provided account ID already exists");
         }
 
+        System.out.println("TO BE RETURNED - isSuccess: " + createAccountResponseModel.isSuccess() + ", description: " + createAccountResponseModel.getDescription() + ", passowrd: " + createAccountResponseModel.getPassword());
         return createAccountResponseModel;
     }
 
@@ -74,7 +75,14 @@ public class ConfigurationalController {
     @GetMapping("/statistics/accountID")
     @PreAuthorize(BuiltInRightsForPreAuthorizeHavingAuthority.LIST)
     public Map<String, Integer> getStatisticsReport() {
-        return vehicleService.getStatisticsReport().stream().collect(Collectors.toMap(user -> user.getId().toString(), user -> user.getVehicles().size()));
+        System.out.println("ENTERED STATISTICS");
+        Map<String, Integer> return_list = vehicleService.getStatisticsReport().stream().collect(Collectors.toMap(user -> user.getId().toString(), user -> user.getVehicles().size()));
+        for (Map.Entry<String, Integer> entry : return_list.entrySet()) {
+            String key = entry.getKey();
+            Integer value = entry.getValue();
+            System.out.println("Key=" + key + ", Value=" + value);
+        }
+        return return_list;
     }
 
 }

@@ -1,0 +1,71 @@
+
+.login-main {
+  background: #AAB4B5;
+}
+.login-style {
+    background-color: #AAB4B5;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 5%;
+    align-items: normal;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-spacing: 5;
+    border-color: antiquewhite;
+    border-width: 2px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  span.psw {
+    float: right;
+    margin-right: 3px;
+    padding-top: 5px; 
+  }
+
+  .errorMsg-psw{
+    float: right;
+    padding-top: 25px;
+    margin-right: -190px;
+  }
+
+  span.errorMsg {
+    float: right;
+    color: red;
+    margin-right: 3px;
+    padding-top: 2px;
+  }
+
+  .btn-primary {
+    margin-top: 20px;
+  }
+
+  .errorMsg-btn{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    margin-top: 35px;
+    padding: 6px 12px;
+
+  }

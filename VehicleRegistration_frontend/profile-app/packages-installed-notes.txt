@@ -1,0 +1,19 @@
+"c:\Program Files (x86)\Yarn\bin\yarn" start
+
+http://localhost:8080/h2-console
+
+
+"c:\Program Files (x86)\Yarn\bin\yarn" add bootstrap@4.1.3 react-cookie@3.0.4 react-router-dom@4.3.1 reactstrap@6.5.0
+
+2019-10-31
+npm install -D typescript
+npm install -D ts-node
+npm install --save react-bootstrap-typeahead
+npm install babel-preset-react-app@9.0.0
+
+2019-11-03
+npm install react-widgets --save
+npm install react-md --save
+
+2019-11-04
+npm install react-burger-menu --save

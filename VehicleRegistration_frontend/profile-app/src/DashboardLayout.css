@@ -1,0 +1,161 @@
+.bp3-button .bp3-icon, .bp3-button .bp3-icon-standard, .bp3-button .bp3-icon-large {
+    color: rgba(0, 0, 0, 0.8);
+    
+}
+
+
+
+tr> td.text-center{
+    text-align: center;
+}
+
+.table {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    box-shadow: inset 1px 1px 0 0  rgba(16, 22, 26, 0.15);
+    margin: 10px auto;
+}
+
+.grid50 > .table td,
+.grid50 > .table th,
+.grid50 > .table th button::before {
+    color: rgba(0, 0, 0, 0.8);
+    vertical-align: baseline;
+}
+
+td > a.bp3-button[class*="bp3-icon-"]::before {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.bp3-input-group > .grid50 > .bp3-input:not(:last-child) {
+    padding-right: 10px;
+    background: #e7e7e7;
+}
+
+.dashboardTable table {
+    width: 100%;
+    border: 3px solid #99c4cc;
+    border-bottom-width: 8px;
+    background: #fffbfa;
+}
+
+.dashboardTable table.bp3-html-table tbody tr:nth-child(even) td {
+    background: #404040;
+}
+
+.dashboardTable table.bp3-html-table tbody tr:nth-child(odd) td {
+    background: rgb(19, 94, 112) ;
+}
+
+.dashboardTable table.bp3-html-table.bp3-html-table-bordered tbody tr td {
+    box-shadow: inset 0 1px 0 0 #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.dashboardTable table > thead {
+    background: #313131;
+}
+
+.dashboardTable table tr td:first-child,
+.dashboardTable table tr th:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.dashboardTable table tr td,
+.dashboardTable table tr:last-child td {
+    color: white;
+    vertical-align: middle;
+}
+
+.dashboardTable table > thead th{
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    width: 23%;
+}
+
+.dashboardTable table.bp3-html-table.bp3-html-table-bordered th:not(:first-child) {
+    box-shadow: none;
+}
+
+.dashboardTable table thead .bp3-button[class*="bp3-icon-"]::before {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.dashboardTable table td > a.bp3-button[class*="bp3-icon-"]::before,
+.dashboardTable table td > a {
+    color: #99c4cc;
+    font-size: 2.3rem;
+}
+
+.dashboardTable table a.bp3-button:hover,
+.dashboardTable table button.bp3-button:hover {
+    background: transparent;
+}
+
+
+.table td a:hover {
+    background: transparent;
+}
+
+.dashboardTable {
+    font-size: 0.8rem;
+}
+
+.category-group {
+   display: flex;
+
+}
+
+.category-item {
+    margin-right: 35px;
+    padding: 15px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+.imgTitle{
+
+   text-align: center;
+   margin-top: 20px;
+
+}
+
+.category-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    /* background-color: #000; */
+}
+
+.category-photo img {
+    opacity: 0.9;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+   
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s; 
+}
+
+.category-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.00);
+    -ms-transform: scale(1.00);
+    transform: scale(1.00);
+}
+
+@media only screen and (min-width: 1200px)  {
+    .dashboardTable {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .dashboardTable tr {
+        font-size: 1.2rem;
+    }
+}

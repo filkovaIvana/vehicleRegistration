@@ -23,8 +23,8 @@ public class UserController {
     }
 
     @GetMapping("/registration")
-    public RegistrationInfoResponseModel checkRegistration(@RequestHeader("registrationCode") String registrationCode) throws ValidationException, ForbiddenException {
-
+    public RegistrationInfoResponseModel checkRegistration(@RequestHeader("registrationcode") String registrationCode) throws ValidationException, ForbiddenException {
+        System.out.println("ENTERED CHECK VALICATION");
         if (registrationCode.isEmpty()){
             throw new ValidationException("registrationCode");
         }
@@ -37,6 +37,7 @@ public class UserController {
         } else {
             registrationInfoResponseModel.setMessage("Your registration has expired.");
         }
+        System.out.println("REG MESSAGE" + registrationInfoResponseModel.getMessage());
         return registrationInfoResponseModel;
     }
 
