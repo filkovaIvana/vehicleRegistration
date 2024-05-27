@@ -154,12 +154,42 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                <version>2.1.9.RELEASE</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>repackage</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+
+
+<!--&lt;!&ndash;            <plugin>&ndash;&gt;-->
+<!--&lt;!&ndash;                <groupId>org.springframework.boot</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <artifactId>spring-boot-maven-plugin</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <fork>true</fork>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <mainClass>org.example.StartApplication</mainClass>&ndash;&gt;-->
+<!--&lt;!&ndash;                </configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;                <executions>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <execution>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <goals>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <goal>repackage</goal>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </goals>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </execution>&ndash;&gt;-->
+<!--&lt;!&ndash;                </executions>&ndash;&gt;-->
+<!--&lt;!&ndash;            </plugin>&ndash;&gt;-->
+
             <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
                 <version>1.6</version>
                 <configuration>
-                    <workingDirectory>basic-frontend-app</workingDirectory>
+                    <workingDirectory>VehicleRegistration_frontend/profile-app</workingDirectory>
                     <installDirectory>target</installDirectory>
                 </configuration>
                 <executions>
@@ -201,7 +231,7 @@
                         <configuration>
                             <target>
                                 <copy todir="${project.build.directory}/classes/public">
-                                    <fileset dir="${project.basedir}/basic-frontend-app/build"/>
+                                    <fileset dir="${project.basedir}/VehicleRegistration_frontend/profile-app/build"/>
                                 </copy>
                             </target>
                         </configuration>
@@ -211,7 +241,158 @@
                     </execution>
                 </executions>
             </plugin>
+
+
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.8.0</version>-->
+<!--            </plugin>-->
         </plugins>
+
+<!--            <plugins>-->
+<!--                <plugin>-->
+<!--                    <groupId>org.springframework.boot</groupId>-->
+<!--                    <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                </plugin>-->
+<!--                <plugin>-->
+<!--                    <groupId>com.github.eirslett</groupId>-->
+<!--                    <artifactId>frontend-maven-plugin</artifactId>-->
+<!--                    <version>1.6</version>-->
+<!--                    <configuration>-->
+<!--                        <workingDirectory>VehicleRegistration_frontend/profile-app</workingDirectory>-->
+<!--                        <installDirectory>target</installDirectory>-->
+<!--                    </configuration>-->
+<!--                    <executions>-->
+<!--                        <execution>-->
+<!--                            <id>install node and npm</id>-->
+<!--                            <goals>-->
+<!--                                <goal>install-node-and-npm</goal>-->
+<!--                            </goals>-->
+<!--                            <configuration>-->
+<!--                                <nodeVersion>v8.9.4</nodeVersion>-->
+<!--                                <npmVersion>5.6.0</npmVersion>-->
+<!--                            </configuration>-->
+<!--                        </execution>-->
+<!--                        <execution>-->
+<!--                            <id>npm install</id>-->
+<!--                            <goals>-->
+<!--                                <goal>npm</goal>-->
+<!--                            </goals>-->
+<!--                            <configuration>-->
+<!--                                <arguments>install</arguments>-->
+<!--                            </configuration>-->
+<!--                        </execution>-->
+<!--                        <execution>-->
+<!--                            <id>npm run build</id>-->
+<!--                            <goals>-->
+<!--                                <goal>npm</goal>-->
+<!--                            </goals>-->
+<!--                            <configuration>-->
+<!--                                <arguments>run build</arguments>-->
+<!--                            </configuration>-->
+<!--                        </execution>-->
+<!--                    </executions>-->
+<!--                </plugin>-->
+<!--                <plugin>-->
+<!--                    <artifactId>maven-antrun-plugin</artifactId>-->
+<!--                    <executions>-->
+<!--                        <execution>-->
+<!--                            <phase>generate-resources</phase>-->
+<!--                            <configuration>-->
+<!--                                <target>-->
+<!--                                    <copy todir="${project.build.directory}/classes/public">-->
+<!--                                        <fileset dir="${project.basedir}/VehicleRegistration_frontend/profile-app/build"/>-->
+<!--                                    </copy>-->
+<!--                                </target>-->
+<!--                            </configuration>-->
+
+<!--                            <goals>-->
+<!--                                <goal>run</goal>-->
+<!--                            </goals>-->
+<!--                        </execution>-->
+<!--                    </executions>-->
+<!--                </plugin>-->
+<!--            </plugins>-->
+<!--            <pluginManagement>-->
+<!--                <plugins>-->
+<!--                    &lt;!&ndash;This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.&ndash;&gt;-->
+<!--                    <plugin>-->
+<!--                        <groupId>org.eclipse.m2e</groupId>-->
+<!--                        <artifactId>lifecycle-mapping</artifactId>-->
+<!--                        <version>1.0.0</version>-->
+<!--                        <configuration>-->
+<!--                            <lifecycleMappingMetadata>-->
+<!--                                <pluginExecutions>-->
+<!--                                    <pluginExecution>-->
+<!--                                        <pluginExecutionFilter>-->
+<!--                                            <groupId>-->
+<!--                                                org.apache.maven.plugins-->
+<!--                                            </groupId>-->
+<!--                                            <artifactId>-->
+<!--                                                maven-antrun-plugin-->
+<!--                                            </artifactId>-->
+<!--                                            <versionRange>-->
+<!--                                                [1.8,)-->
+<!--                                            </versionRange>-->
+<!--                                            <goals>-->
+<!--                                                <goal>run</goal>-->
+<!--                                            </goals>-->
+<!--                                        </pluginExecutionFilter>-->
+<!--                                        <action>-->
+<!--                                            <ignore></ignore>-->
+<!--                                        </action>-->
+<!--                                    </pluginExecution>-->
+<!--                                </pluginExecutions>-->
+<!--                            </lifecycleMappingMetadata>-->
+<!--                        </configuration>-->
+<!--                    </plugin>-->
+<!--                </plugins>-->
+<!--            </pluginManagement>-->
+
+
     </build>
+
+<!--    <profiles>-->
+<!--        <profile>-->
+<!--            <id>jkd-12-compile</id>-->
+<!--            <activation>-->
+<!--                <jdk>12</jdk>-->
+<!--            </activation>-->
+<!--            <build>-->
+<!--                <pluginManagement>-->
+<!--                    <plugins>-->
+<!--                        <plugin>-->
+<!--                            <groupId>org.apache.maven.plugins</groupId>-->
+<!--                            <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                            <configuration>-->
+<!--                                <release>8</release>-->
+<!--                            </configuration>-->
+<!--                        </plugin>-->
+<!--                    </plugins>-->
+<!--                </pluginManagement>-->
+<!--            </build>-->
+<!--        </profile>-->
+<!--        <profile>-->
+<!--            <id>jdk-8-compile</id>-->
+<!--            <activation>-->
+<!--                <jdk>[,8]</jdk>-->
+<!--            </activation>-->
+<!--            <build>-->
+<!--                <pluginManagement>-->
+<!--                    <plugins>-->
+<!--                        <plugin>-->
+<!--                            <groupId>org.apache.maven.plugins</groupId>-->
+<!--                            <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                            <configuration>-->
+<!--                                <source>8</source>-->
+<!--                                <target>8</target>-->
+<!--                            </configuration>-->
+<!--                        </plugin>-->
+<!--                    </plugins>-->
+<!--                </pluginManagement>-->
+<!--            </build>-->
+<!--        </profile>-->
+<!--    </profiles>-->
 
 </project>
